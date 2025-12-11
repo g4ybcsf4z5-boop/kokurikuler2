@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobat NTT - Eksplorasi Nusa Tenggara Timur</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-route"></i> Sobat NTT
+        </div>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#wisata">Wisata</a>
+            <a href="#kuliner">Kuliner</a>
+            <a href="#oleholeh">Oleh-Oleh</a>
+            <a href="#penginapan">Penginapan</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Jelajahi Pesona Abadi Nusa Tenggara Timur</h1>
+                <p>Temukan keindahan alam, kekayaan budaya, dan keramahan hati di NTT.</p>
+            </div>
+        </section>
+
+        <section id="wisata" class="category-section">
+            <h2 class="section-title"><i class="fas fa-mountain"></i> Destinasi Wisata Favorit</h2>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="danaukelimtu.webp" alt="Danau Kelimutu" class="card-image">
+                    <div class="card-info">FAVORIT</div>
+                    <div class="card-content">
+                        <h4><i class="fas fa-mountain"></i> Danau Kelimutu (Flores)</h4>
+                        <p>Tiga danau kawah dengan warna air yang selalu berubah. Keajaiban geologi yang sakral.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(1, 'wisata')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(1, 'wisata')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="pulaukomodo.webp" alt="Taman Nasional Komodo" class="card-image">
+                    <div class="card-info">FAVORIT</div>
+                    <div class="card-content">
+                        <h4><i class="fas fa-mountain"></i> Taman Nasional Komodo</h4>
+                        <p>Habitat asli Komodo, kadal terbesar di dunia. Wajib dikunjungi untuk trekking dan melihat Komodo.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(2, 'wisata')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(2, 'wisata')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="pantaipink.webp" alt="Pantai Pink" class="card-image">
+                    <div class="card-content">
+                        <h4><i class="fas fa-mountain"></i> Pantai Pink (Flores)</h4>
+                        <p>Salah satu dari sedikit pantai berpasir merah muda di dunia, terletak di Pulau Komodo.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(3, 'wisata')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(3, 'wisata')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="desatadatbena.webp" alt="Desa Adat Bena" class="card-image">
+                    <div class="card-content">
+                        <h4><i class="fas fa-mountain"></i> Desa Adat Bena (Flores)</h4>
+                        <p>Desa tradisional suku Ngada yang tersusun megah dengan rumah adat beratap alang-alang.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(4, 'wisata')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(4, 'wisata')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="kuliner" class="category-section">
+            <h2 class="section-title"><i class="fas fa-utensils"></i> Lezatnya Kuliner Khas</h2>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="seisapi.webp" alt="Se'i Sapi Kupang" class="card-image">
+                    <div class="card-info">FAVORIT</div>
+                    <div class="card-content">
+                        <h4><i class="fas fa-utensils"></i> Se'i Sapi Kupang</h4>
+                        <p>Daging sapi asap khas Kupang yang diiris tipis, disajikan dengan sambal Lu'at.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(5, 'kuliner')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(5, 'kuliner')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="warungrajarasa.webp" alt="Warung Raja Rasa" class="card-image">
+                    <div class="card-content">
+                        <h4><i class="fas fa-utensils"></i> Warung Raja Rasa</h4>
+                        <p>Warung Raja Rasa NTT adalah tempat makan spesialis yang menyajikan hidangan otentik khas Nusa Tenggara Timur (NTT), dengan menu andalan seperti Se'i Sapi (daging sapi asap) dan sambal khas, menawarkan cita rasa daerah yang gurih dan kuat.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(6, 'kuliner')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(6, 'kuliner')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="ikankuahkuning.webp" alt="Ikan Kuah Asam Inspirasi" class="card-image">
+                    <div class="card-content">
+                        <h4><i class="fas fa-utensils"></i> Ikan Kuah Asam Inspirasi</h4>
+                        <p>hidangan berkuah bening dan segar yang menonjolkan rasa asam alami dari belimbing wuluh atau tomat, dipadukan dengan pedasnya cabai rawit dan daging ikan laut yang segar..</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(7, 'kuliner')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(7, 'kuliner')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="oleholeh" class="category-section">
+            <h2 class="section-title"><i class="fas fa-gifts"></i> Oleh-Oleh Wajib Dibawa Pulang</h2>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="tenunikatsumba.webp" alt="Kain Tenun Ikat Sumba" class="card-image">
+                    <div class="card-info">FAVORIT</div>
+                    <div class="card-content">
+                        <h4><i class="fas fa-gifts"></i> Kain Tenun Ikat Sumba</h4>
+                        <p>Kain tenun dengan motif mewah dan proses pembuatan yang memakan waktu berbulan-bulan.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(9, 'oleholeh')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(9, 'oleholeh')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="kopibajawa.webp" alt="Kopi Flores Bajawa" class="card-image">
+                    <div class="card-info">FAVORIT</div>
+                    <div class="card-content">
+                        <h4><i class="fas fa-gifts"></i> Kopi Flores Bajawa</h4>
+                        <p>Biji kopi Arabika organik yang ditanam di tanah vulkanik Bajawa, dikenal dengan rasa nutty.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(10, 'oleholeh')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(10, 'oleholeh')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="sasando.webp" alt="Sasando Miniatur" class="card-image">
+                    <div class="card-content">
+                        <h4><i class="fas fa-gifts"></i> Sasando Miniatur</h4>
+                        <p>Miniatur alat musik petik tradisional Rote, suvenir unik dari NTT.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(11, 'oleholeh')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-map" onclick="openMaps(11, 'oleholeh')">
+                                <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="penginapan" class="category-section">
+            <h2 class="section-title"><i class="fas fa-hotel"></i> Akomodasi Pilihan Terbaik</h2>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="ayanaresort.webp" alt="Ayana Komodo Resort" class="card-image">
+                    <div class="card-info">FAVORIT</div>
+                    <div class="card-content">
+                        <h4><i class="fas fa-hotel"></i> Ayana Komodo Resort</h4>
+                        <p>Resort bintang lima yang mewah dengan pemandangan langsung ke perairan Labuan Bajo.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(13, 'penginapan')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-tiket" onclick="openTiket(13, 'penginapan')">
+                                <i class="fas fa-ticket-alt"></i> Pesan Hotel di Tiket.com
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="nihisumba.webp" alt="Nihi Sumba" class="card-image">
+                    <div class="card-info">FAVORIT</div>
+                    <div class="card-content">
+                        <h4><i class="fas fa-hotel"></i> Nihi Sumba</h4>
+                        <p>Resort paling eksklusif di Sumba, dikenal sebagai salah satu hotel terbaik di dunia.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(14, 'penginapan')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-tiket" onclick="openTiket(14, 'penginapan')">
+                                <i class="fas fa-ticket-alt"></i> Pesan Hotel di Tiket.com
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="laboheme.webp" alt="La Boheme Bajo" class="card-image">
+                    <div class="card-content">
+                        <h4><i class="fas fa-hotel"></i> La Boheme Bajo (Hostel)</h4>
+                        <p>Akomodasi budget yang populer di kalangan backpacker di Labuan Bajo.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="openDetailModal(15, 'penginapan')">
+                                <i class="fas fa-info-circle"></i> Deskripsi & Detail
+                            </button>
+                            <button class="btn-tiket" onclick="openTiket(15, 'penginapan')">
+                                <i class="fas fa-ticket-alt"></i> Pesan Hotel di Tiket.com
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <div class="modal-info">
+                <p><strong><i class="fas fa-star"></i> Rating:</strong> <span id="modal-rating"></span></p>
+                <p><strong><i class="fas fa-money-bill-wave"></i> Harga Tiket/Mulai:</strong> <span id="modal-price"></span></p>
+                <p><strong><i class="fas fa-clock"></i> Jam Buka:</strong> <span id="modal-hours"></span></p>
+                <p><strong><i class="fas fa-plane-departure"></i> Jarak dari Bandara:</strong> <span id="modal-distance"></span></p>
+                <p><strong><i class="fas fa-road"></i> Estimasi Waktu Tempuh:</strong> <span id="modal-time"></span></p>
+                <p id="modal-favorite" class="favorite"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Sobat NTT. Eksplorasi Keindahan Tiada Akhir.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
